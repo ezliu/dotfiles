@@ -57,5 +57,3 @@ set -o vi
 
 # Make mac only have 1 history
 export SHELL_SESSION_HISTORY=0
-
-export PYTHONPATH=~/Desktop/Evan/College/curis16/code/strong_supervision/
