@@ -57,3 +57,5 @@ set -o vi
 
 # Make mac only have 1 history
 export SHELL_SESSION_HISTORY=0
+
+source ~/.git-completion.bash
