@@ -1,2 +1,5 @@
 .vim/tmp
-.vim/bundle
+.vim/bundle/.vundle
+.vim/bundle/nerdtree
+.vim/bundle/vim-latex
+.vim/bundle/YouCompleteMe
