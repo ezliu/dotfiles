@@ -40,6 +40,8 @@ alias fresh="cd ~/Desktop/Evan/College/Freshman"
 alias curis="cd ~/Desktop/Evan/College/curis16"
 alias server="python -m SimpleHTTPServer"
 alias up="cd .."
+alias rsync="rsync -rzvlt"
+
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
