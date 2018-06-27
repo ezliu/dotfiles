@@ -9,7 +9,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".bashrc .bash_profile .vim .vimrc .git-completion.bash"    # list of files/folders to symlink in homedir
+files=".bashrc .bash_profile .vim .vimrc .git-completion.bash .tmux.conf .gitconfig"    # list of files/folders to symlink in homedir
 
 ##########
 
