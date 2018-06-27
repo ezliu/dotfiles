@@ -13,8 +13,6 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
-[core]
-	editor = /usr/local/bin/vim
 [push]
 	default = simple
 [alias]
@@ -28,3 +26,5 @@
 	s = status
 	a = add
 	c = commit
+[core]
+	editor = vim
