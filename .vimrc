@@ -228,8 +228,18 @@ function TrimSpaces() range
   let &hlsearch=oldhlsearch
 endfunction
 
+" Adds a dummy tag at the current position
+function DummyTag()
+  let dummytag = expand('<cword>')."fake tag"
+	let pos = [bufnr()] + getcurpos()[1:]
+	let item = {'bufnr': pos[0], 'from': pos, 'tagname': dummytag}
+  let winid = win_getid()
+  call settagstack(winid, {'items': [item]}, 'a')
+endfunction
+
 command -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
 command -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
 nnoremap <F12>     :ShowSpaces 1<CR>
 nnoremap <S-F12>   m`:TrimSpaces<CR>``
 vnoremap <S-F12>   :TrimSpaces<CR>
+nnoremap <C-\>s    :call DummyTag()<CR> :YcmCompleter GoToReferences <cword><CR>
