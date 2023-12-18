@@ -60,5 +60,7 @@ set -o vi
 
 # Make mac only have 1 history
 export SHELL_SESSION_HISTORY=0
+export HISTFILESIZE=100000
+export HISTSIZE=50000
 
 source ~/.git-completion.bash
